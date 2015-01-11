@@ -1,0 +1,28 @@
+users:
+  jbouse:
+    fullname: Jeremy T. Bouse
+    shell: /bin/bash
+    ssh_auth:
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDJ33n84DHreWC+OxXEMfVdybpUbPsa11nCHKSCHkAL/TI07myS8XNx6MOPrjuhxcCh6zJtvewiuAv9skPTcb5CoVmVQ/F4DFTtAusUre9klPHg9sLa3MewEVWsaAXJwxOKkczOgs/j05RWIOsltEQJZKgGukjR4RafCu32Q/j9EFFv+3y76hZySeL2snqEeS1TFURk7/TJD2NTFHQ4ILCKSijCdVcrqWpYjVb3/sEKZFe3JkGEtPtQaAYrs4Vz4mYWbKRJgqNC5V4OrWIbU+BbqR6LFLh+IEv8dAn6O+IlajESK43MB5fhnmRAFKQQWYMyj35gfpFv51xpOaWlMoULIFHxvX8kHSNjYYWjMgXauefDgRbYreAlmaK6zCcejwmHmuo5wv8EhgNWa5iRh05XdqmLDAwvpdo1qchv0ABIFB0M/t0GhiW9EAy7ddgy9PIzsfe6bp1rYBElfDA376c20P+8pfOjTVngQuA0xoTunym/E2dLqOgwR5Ifq04M7n8= cardno:00050000109B
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCFxxItNuKLJD+9XdI/gZQweM2+l5yHFSW7KxmigHtG7HTv9CFE5difMEVAHBGisbBbJEpHk7QYbrZpThdd+AgKKqSvZlzNKjhdMTmpQ2M8USfVlI0z0ftF8Q3Dr7VsZO1YfuoE9NaZgICYtJrpePwngwAOEg+ARK9snAMken5psCcNlHDPGb/GJ/NBrW0mztlid3JylLlRiGtHzVMiGSbOpGr6dJmgPiN0QyQ9gzasjOyi70es5h3ozn8Fr3qSKkGC78UGsHZD/Yo9U4f3QTjri9xL5qn6vah1spakzklHTbo3KqAOCIWdYeFCJ9yzI6hIdsHylFaaSpswo3EFK6mhEJoxRicFpjx2CoqVC5Do5qEkfyZ9kAnJRvJj1torqK/ucLkeDfthR91bwyMnnlLOy4kb3Um608GgOCrWtCh9BmbEe23kfLPMm0UVGzN+iqMrEce+pJFupZ+DbzB0r8LT/qnKibr1qTKBt7rJkt7K2j3cpjgPp/rs+OWLbu+E/IU= cardno:000500001D4F
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCBgqLN36rcWKecQzbA3e+P4A1eqg+aPnz2UhYYCd3Qva/HZG/W+B5xdabfmPSGZuAOAZ3oA6xBZHpAZ39zQW9wqRJI7Yyo8LoNqS9QYY7nQ4dYDBB2oSeFDW8VntP9L8kpFOn7DvMuasw0oLl6KmHgzTCVZEuD/IHFXZXCTWBJ08q9iB7WOuxY9rxRjHnricUSkm6SdxXiZ1OeTo5g1PVSFxx08ktbZr65uanBRaUKW3dKRgkrzcYcUOJfr6wJP7ziZjWjHrsXyHgsIo3dDW/DOgZOm7anaXYbgwqQpIvyBMt0ScX5LQV78UV6drySsSWWCmTwMUZWqK7U6XcCFzBiJZSYbh4I+U3LY7xevqJPjtO/c07Hi5YchUEDQMKs83T5Cagg36eUclAbpjZ90Cps4nktsJ5X/a4X9ytUfYCWUO5E7nXw234SfWpzw/Iiqe7ryQRwoJAFaS+EuFxMU24ckGLE83hzzvCtdCU5xfNPBpfMX8LKss+Hn60hWzh0CkE= cardno:000500001D50
+      - ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAgEAjvLOyJ72dzGo3UYaLKq8LYRHZD5Dbqs7k1ZDVN4KkWNRRwlJ6C6qTa9YZfhQC1+XehOvihOY9+yAx2q1uIyZ1hvVeMEPV0tbhYjEnQtEYL/flRUNZQ82BTegHds2dM3sam/Ol0KDva25A5JqaI20LP/g2b649SAi1BcccjqPqqWseMBYERIi/An6sqcFv2ZNFJlmDjcyMLC6WW48c3uXdj2Ec+CyB5v4lhj/SKjIVN3+hLkX+5gBkVqpO6qVvigcjRor6EDFy7KLooz/UeQTuSzTpdeXUmo/XVzpsfmddPIkwQVws47w6mr1GUg0J7kW4MRmVkuc2zuVxedpHTPHaoZRnKp6QqawEZMK3RfnNKftUf6QEutJCGyPZW35VCFB1cr471MZmcamewep5kqiJWya300rLzMjwdpwcC3+ASsspQZvyXxvE0Zebfqz4b1SUddyAF/E9WhUy2eKW3GgL+F2iFTJyYNi3ODz5Cwg6FMpAsyxZKMwgluontyvUq715dxcyKBr4teO6F6yt6jwXRUfjpQ8HQ/hEAju2mW2USrvUwrK4FIPjcFOvx7gG2KBiVwCjEqsnsG2qwO7/V6wpgNQvdPcGDi87F1833hYWGJ0CT+/5MxjCN2psPFCXL4qq93ekw0I5XfCpMhcnoNN4m+Amn1+hNquq4jfkpGd8k0= jbouse@MAR-NB-003597
+
+  toor:
+    absent: True
+    purge: True
+    force: True
+
+  pi:
+    absent: True
+    purge: True
+    force: True
+
+sudoers:
+  users:
+    ADMINS:
+      - 'ALL=(ALL:ALL) NOPASSWD: ALL'
+  aliases:
+    users:
+      ADMINS:
+        - jbouse
