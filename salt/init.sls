@@ -48,5 +48,4 @@ salt:
       as_user: True
       channel: 'automation'
       yaml_format: True
-      {# Re-enable after 2016.3.3 is released with fix #}
-      # changes: True
+      changes: True
