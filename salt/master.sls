@@ -28,8 +28,8 @@ salt:
     order_masters: True
     rest_cherrypy:
       port: 8000
-      ssl_crt: /etc/pki/tls/certs/localhost.crt
-      ssl_key: /etc/pki/tls/certs/localhost.key
+      ssl_crt: /etc/ssl/certs/undergrid.net-bundle.crt
+      ssl_key: /etc/ssl/private/undergrid.net.key
     external_auth:
       pam:
         jbouse:

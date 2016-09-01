@@ -24,6 +24,10 @@ base:
   'G@roles:salt:*':
     - salt.master
 
+  'G@roles:salt:master':
+    - cert
+    - cert.bundles
+
   'G@roles:salt:syndic':
     - salt.syndic
 
