@@ -1,7 +1,7 @@
 #!jinja|yaml|gpg
 sks:
   config:
-    hkp_address: {{ grains['ip_interfaces']['lo'][0] }}
+    hkp_address: {{ grains.ip_interfaces['lo'][0] }}
   membership:
     keys2.kfwebs.net:
       admin: Kristian Fiskerstrand
@@ -79,20 +79,20 @@ nginx:
           config:
             - server:
               - listen:
-                - {{ grains['ip_interfaces']['eth0'][0] }}:11371
+                - {{ grains.ip_interfaces['eth0'][0] }}:11371
                 - default_server
               - listen:
-                - {{ grains['ip_interfaces']['eth1'][0] }}:11371
+                - {{ grains.ip_interfaces['eth1'][0] }}:11371
                 - default_server
               - listen:
-                - {{ grains['ip_interfaces']['eth0'][0] }}:80
+                - {{ grains.ip_interfaces['eth0'][0] }}:80
                 - default_server
               - listen:
-                - "[{{ grains['ip6_interfaces']['eth0'][0] }}]:11371"
+                - "[{{ grains.ip6_interfaces['eth0'][0] }}]:11371"
                 - default_server
                 - ipv6only=on
               - listen:
-                - "[{{ grains['ip6_interfaces']['eth0'][0] }}]:80"
+                - "[{{ grains.ip6_interfaces['eth0'][0] }}]:80"
                 - default_server
                 - ipv6only=on
               - access_log: 'off'
@@ -125,11 +125,11 @@ nginx:
 
             - server:
               - listen:
-                - {{ grains['ip_interfaces']['eth0'][0] }}:443
+                - {{ grains.ip_interfaces['eth0'][0] }}:443
                 - default_server
                 - ssl
               - listen:
-                - "[{{ grains['ip6_interfaces']['eth0'][0] }}]:443"
+                - "[{{ grains.ip6_interfaces['eth0'][0] }}]:443"
                 - default_server
                 - ssl
                 - ipv6only=on
