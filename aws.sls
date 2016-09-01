@@ -1,22 +1,4 @@
 #!yaml|gpg
-old_ugns_aws_profile:
-  keyid: AKIAI2PLRT527F363EHQ
-  key: |
-    -----BEGIN PGP MESSAGE-----
-    Version: GnuPG v2
-
-    hQEMA3daYIEwiMseAQgAvyqt2upG+D8jv6PGQSoQRMphseQlp5hLX1fcI3c0+UDo
-    pPxWsGuiMACGm87E3qA8d9+wskkY7Dov/gOY+RZkSGHDtBj35kVF4qtmRrpMCkdg
-    2Md0nt6SE+UKZXDEYSoMHnD1CcdjPsuJkVqSgER2g+KhZZUahTH1YctlmYqDYf/y
-    5mdhGXU/HK72lFRaSdnW3CXT5/+rRw23FA0QuTTthQ+KWQSUxRUG7SbnraIMjCj1
-    lhSYDUSN0Sjumsi/lq1UIFEan0q7BIfTkQc0OGC7z9ze7rx+DknabOXX1Pa6whA/
-    aXHbA54p6WnFwRZz7/qJb5R7B+u6lFIFTO8SOdZsydJjAbIBsAsZANyrOgX8+6fg
-    4py3kq5CZYakDAmxAOPLQ46ulDHh8KPyXqnupZbemK6zfUEYyiTeEZQSzb2NrU5s
-    nbbuEhM9OUjykuYeiloLpmsdRU2L3V8FPGzCslwxlEE8mV8F
-    =APzx
-    -----END PGP MESSAGE-----
-  region: us-east-1
-
 ugns_aws_profile:
   keyid: AKIAIGWGH7LOV5F6TPBQ
   key: |
