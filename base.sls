@@ -1,6 +1,5 @@
 base:
   pkgs:
-    - python-pip
     - vim
     - tmux
 
