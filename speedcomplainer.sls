@@ -45,6 +45,8 @@ speedcomplainer:
 
 base:
   pkgs:
+    - vim
+    - tmux
     - git
     - virtualenv
 
