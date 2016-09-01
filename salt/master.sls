@@ -34,6 +34,15 @@ salt:
       pam:
         jbouse:
           - '.*'
+    nodegroups:
+      debian: 'G@os:Debian'
+      ubuntu: 'G@os:Ubuntu'
+      raspbian: 'G@os:Raspbian'
+      windows: 'G@os:Windows'
+      mail-servers: 'G@roles:mail:*'
+      sks-servers: 'G@roles:sks:*'
+      web-servers: 'G@roles:nginx:* or G@roles:apache:*'
+      salt-servers: 'G@roles:salt:*'
 
   cloud:
     master: {{ grains.master }}
