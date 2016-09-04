@@ -363,6 +363,7 @@ salt_formulas:
       options:
         branch: master
         force_reset: True
+        force_fetch: True
     dev:
       basedir: /srv/formulas/dev
       update: True
