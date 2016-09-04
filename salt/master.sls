@@ -26,6 +26,7 @@ salt:
             - pubkey: /etc/salt/pki/gitfs/deploy.pub
     pillar_opts: False
     order_masters: True
+    winrepo_provider: gitpython
     rest_cherrypy:
       port: 8000
       ssl_crt: /etc/ssl/certs/undergrid.net-bundle.crt
