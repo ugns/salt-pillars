@@ -404,3 +404,4 @@ salt_formulas:
       - snmp-formula
       - speedcomplainer-formula
       - raspberrypi-formula
+      - haveged-formula
