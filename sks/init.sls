@@ -24,11 +24,9 @@ mine_functions:
 schedule:
   sks_update:
     enabled: True
-    function: state.sls
+    function: state.highstate
     hours: 6
     splay: 300
-    args:
-      - sks.config
     kwargs:
       test: False
     returner: slack
