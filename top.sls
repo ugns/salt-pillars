@@ -36,6 +36,7 @@ base:
 
   'G@roles:sks:*':
     - sks
+    - schedules.highstate
 
   'G@roles:sks:backend':
     - sks.backend
@@ -83,6 +84,7 @@ base:
 
   'G@roles:ntp:master':
     - ntp.master
+    - schedules.highstate
 
   'G@roles:ntp:peer':
     - ntp.peer

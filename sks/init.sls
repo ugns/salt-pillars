@@ -21,17 +21,6 @@ mine_functions:
     mine_function: network.ip_addrs
     interface: eth1
 
-schedule:
-  sks_update:
-    enabled: True
-    function: state.highstate
-    hours: 6
-    splay: 300
-    kwargs:
-      test: False
-    returner: slack
-    return_job: True
-
 snmp:
   conf:
     location: 'New York City, NY'
