@@ -44,9 +44,9 @@ nginx:
                 - default_server
               - access_log: 'off'
               - server_tokens: 'off'
-              - ssl_certificate: /etc/ssl/certs/webmail.undergrid.net.crt
-              - ssl_certificate_key: /etc/ssl/private/webmail.undergrid.net.key
-              - ssl_trusted_certificate: /etc/ssl/certs/sub.class2.server.ca.crt
+              - ssl_certificate: /etc/ssl/certs/undergrid.net.crt
+              - ssl_certificate_key: /etc/ssl/private/undergrid.net.key
+              - ssl_trusted_certificate: /etc/ssl/certs/sca.server3.crt
               - ssl_protocols:
                 - TLSv1
                 - TLSv1.1
@@ -60,7 +60,7 @@ nginx:
               - add_header:
                 - Strict-Transport-Security 'max-age=31536000'
               - add_header:
-                - Public-Key-Pins 'pin-sha256="8TVU99arhofm+qUMAt6c6FQZzhP9CUha1Uo5cCwrQa8="; pin-sha256="5SzpzAvKPcuCnphngHDKLm+DSF0saaDAFtpgOuTvhlQ="; max-age=315366000'
+                - Public-Key-Pins 'pin-sha256="gzfGUUlu7tXnxEMXYVam6okv4zKMkdklF6FWaRAuVhg="; pin-sha256="5SzpzAvKPcuCnphngHDKLm+DSF0saaDAFtpgOuTvhlQ="; max-age=315366000'
               - location /:
                 - proxy_pass: http://webservers
                 - proxy_set_header:
