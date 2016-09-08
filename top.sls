@@ -58,7 +58,6 @@ base:
     - nginx.webmail.undergrid
     - nginx.webmail.alternativehaven
     - nginx.webmail.vistalakehoa
-    - nginx.webmail.focuscounseling
     - schedules.highstate
 
   'G@roles:mail:*':
