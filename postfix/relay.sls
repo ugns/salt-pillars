@@ -2,6 +2,7 @@ postfix:
   config:
     inet_interfaces: all
     myhostname: smtp.undergrid.net
+    mynetwork: '127.0.0.0/8 [::ffff:127.0.0.0]/104 [::1]/128 96.80.33.144/29'
     mydestination: {{ grains.fqdn }}, smtp.undergrid.net, localhost, localhost.localdomain
     relayhost: ''
     masquerade_classes: envelope_sender, envelope_recipient, header_sender, header_recipient
@@ -29,15 +30,15 @@ postfix:
     smtpd_delay_reject: 'yes'
     smtpd_hard_error_limit: 12
     smtpd_helo_required: 'yes'
-    smtpd_helo_restrictions: permit_mynetworks, reject_non_fqdn_helo_hostname, reject_invalid_helo_hostname, permit
-    smtpd_recipient_restrictions: reject_non_fqdn_recipient, reject_unknown_recipient_domain, permit_mynetworks, permit_sasl_authenticated, reject_unauth_pipelining, reject_unauth_destination, reject_invalid_helo_hostname, reject_non_fqdn_helo_hostname, reject_rbl_client zen.spamhaus.org, reject_rbl_client bl.spamcop.net, check_policy_service unix:private/policyd-spf, permit
+    smtpd_helo_restrictions: reject_non_fqdn_sender, reject_unknown_sender_domain, reject_non_fqdn_recipient, reject_unknown_recipient_domain, permit_mynetworks, reject_unauth_destination, reject_non_fqdn_helo_hostname, reject_invalid_helo_hostname
+    smtpd_recipient_restrictions: reject_non_fqdn_sender, reject_unknown_sender_domain, reject_non_fqdn_recipient, reject_unknown_recipient_domain,  permit_mynetworks, permit_sasl_authenticated, reject_unauth_pipelining, reject_unauth_destination, reject_invalid_helo_hostname, reject_non_fqdn_helo_hostname, reject_rbl_client zen.spamhaus.org, reject_rbl_client bl.spamcop.net, reject_rbl_client bogons.cymru.com, check_policy_service unix:private/policyd-spf
     smtpd_sasl_auth_enable: 'yes'
     smtpd_sasl_authenticated_header: 'yes'
     smtpd_sasl_local_domain: ''
     smtpd_sasl_path: inet:mail.undergrid.net:54321
     smtpd_sasl_security_options: noanonymous
     smtpd_sasl_type: dovecot
-    smtpd_sender_restrictions: reject_non_fqdn_sender, reject_unknown_sender_domain, check_sender_mx_access cidr:/etc/postfix/drop.cidr, check_sender_ns_access cidr:/etc/postfix/drop.cidr, check_sender_mx_access cidr:/etc/postfix/bogon_networks.cidr, check_sender_access pcre:/etc/postfix/sender_access, reject_rhsbl_sender dsn.rfc-ignorant.org, permit_sasl_authenticated, permit_mynetworks, permit
+    smtpd_sender_restrictions: reject_non_fqdn_sender, reject_unknown_sender_domain, check_client_access cidr:/etc/postfix/drop.cidr, check_sender_ns_access cidr:/etc/postfix/drop.cidr, check_sender_mx_access cidr:/etc/postfix/drop.cidr, reject_rbl_client bogons.cymru.com, check_sender_access pcre:/etc/postfix/sender_access, permit_sasl_authenticated, permit_mynetworks
     smtpd_soft_error_limit: 3
     smtpd_tls_CAfile: /etc/ssl/certs/ca-certificates.crt
     smtpd_tls_auth_only: 'yes'
