@@ -30,7 +30,7 @@ postfix:
     smtpd_delay_reject: 'yes'
     smtpd_hard_error_limit: 12
     smtpd_helo_required: 'yes'
-    smtpd_helo_restrictions: reject_non_fqdn_sender, reject_unknown_sender_domain, reject_non_fqdn_recipient, reject_unknown_recipient_domain, permit_mynetworks, reject_unauth_destination, reject_non_fqdn_helo_hostname, reject_invalid_helo_hostname
+    smtpd_helo_restrictions: permit_mynetworks, reject_non_fqdn_sender, reject_unknown_sender_domain, reject_non_fqdn_recipient, reject_unknown_recipient_domain, reject_unauth_destination, reject_non_fqdn_helo_hostname, reject_invalid_helo_hostname
     smtpd_recipient_restrictions: reject_non_fqdn_sender, reject_unknown_sender_domain, reject_non_fqdn_recipient, reject_unknown_recipient_domain,  permit_mynetworks, permit_sasl_authenticated, reject_unauth_pipelining, reject_unauth_destination, reject_invalid_helo_hostname, reject_non_fqdn_helo_hostname, reject_rbl_client zen.spamhaus.org, reject_rbl_client bl.spamcop.net, reject_rbl_client bogons.cymru.com, check_policy_service unix:private/policyd-spf
     smtpd_sasl_auth_enable: 'yes'
     smtpd_sasl_authenticated_header: 'yes'
