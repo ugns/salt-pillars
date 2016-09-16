@@ -25,7 +25,7 @@ postfix:
     smtp_tls_note_starttls_offer: 'yes'
     smtp_tls_protocols: '!SSLv2, !SSLv3'
     smtp_tls_security_level: may
-    smtpd_client_restrictions: reject_rbl_client zen.spamhaus.org, reject_rbl_client bl.spamcop.net
+    smtpd_client_restrictions: reject_rbl_client zen.spamhaus.org, reject_rbl_client bl.spamcop.net, reject_rbl_client bogons.cymru.com
     smtpd_data_restrictions: reject_unauth_pipelining
     smtpd_delay_reject: 'yes'
     smtpd_hard_error_limit: 12
