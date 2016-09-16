@@ -2,7 +2,7 @@ postfix:
   config:
     inet_interfaces: all
     myhostname: smtp.undergrid.net
-    mynetwork: '127.0.0.0/8 [::ffff:127.0.0.0]/104 [::1]/128 96.80.33.144/29'
+    mynetworks: '127.0.0.0/8 [::ffff:127.0.0.0]/104 [::1]/128 96.80.33.144/29'
     mydestination: {{ grains.fqdn }}, smtp.undergrid.net, localhost, localhost.localdomain
     relayhost: ''
     masquerade_classes: envelope_sender, envelope_recipient, header_sender, header_recipient
