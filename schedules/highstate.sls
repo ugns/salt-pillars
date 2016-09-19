@@ -7,4 +7,5 @@ schedule:
     kwargs:
       test: False
     returner: slack
+    run_on_start: False
     return_job: True
