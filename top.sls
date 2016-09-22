@@ -10,6 +10,7 @@ base:
     - aws
     - base
     - snmp
+    - pagerduty
 
   'control.undergrid.net':
     - salt.engines.slack
