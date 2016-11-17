@@ -65,10 +65,10 @@ sks:
       admin: Andrew Alderwick
       email: andrew@alderwick.co.uk
       keyid: '0x3ABB8CDAC6BEA800'
-    pgp.gwolf.org:
-      admin: Gunnar Wolf
-      email: gwolf@gwolf.org
-      keyid: '0xC1DB921F'
+    keyserver.ubuntu.com:
+      admin: Haw Loeung
+      email: haw.loeung@canonical.com
+      keyid: '0xFA5C7D29'
 
 nginx:
   ng:
