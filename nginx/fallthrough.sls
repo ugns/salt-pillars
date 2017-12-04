@@ -55,12 +55,12 @@ nginx:
               - ssl_dhparam: /etc/ssl/dhparams.pem
               - ssl_ciphers:
                 - 'ECDH+AESGCM:DH+AESGCM:ECDH+AES256:DH+AES256:ECDH+AES128:DH+AES:ECDH+3DES:DH+3DES:RSA+AESGCM:RSA+AES:RSA+3DES:!aNULL:!MD5:!DSS'
-              - ssl_stapling: 'on'
-              - ssl_stapling_verify: 'on'
-              - add_header:
-                - Strict-Transport-Security 'max-age=31536000'
-              - add_header:
-                - Public-Key-Pins 'pin-sha256="gzfGUUlu7tXnxEMXYVam6okv4zKMkdklF6FWaRAuVhg="; pin-sha256="5SzpzAvKPcuCnphngHDKLm+DSF0saaDAFtpgOuTvhlQ="; max-age=315366000'
+              # - ssl_stapling: 'on'
+              # - ssl_stapling_verify: 'on'
+              # - add_header:
+              #   - Strict-Transport-Security 'max-age=31536000'
+              # - add_header:
+              #   - Public-Key-Pins 'pin-sha256="gzfGUUlu7tXnxEMXYVam6okv4zKMkdklF6FWaRAuVhg="; pin-sha256="5SzpzAvKPcuCnphngHDKLm+DSF0saaDAFtpgOuTvhlQ="; max-age=315366000'
               - location /:
                 - proxy_pass: http://webservers
                 - proxy_set_header:

@@ -3,7 +3,7 @@ nginx:
     vhosts:
       managed:
         webmail.focuscounseling:
-          enabled: True
+          enabled: False
           config:
             - server:
               - server_name:

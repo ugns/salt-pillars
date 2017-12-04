@@ -20,12 +20,12 @@ nginx:
               - ssl_dhparam: /etc/ssl/dhparams.pem
               - ssl_ciphers:
                 - 'ECDH+AESGCM:DH+AESGCM:ECDH+AES256:DH+AES256:ECDH+AES128:DH+AES:ECDH+3DES:DH+3DES:RSA+AESGCM:RSA+AES:RSA+3DES:!aNULL:!MD5:!DSS'
-              - ssl_stapling: 'on'
-              - ssl_stapling_verify: 'on'
+              # - ssl_stapling: 'on'
+              # - ssl_stapling_verify: 'on'
               - add_header:
-                - Strict-Transport-Security 'max-age=31536000'
+                - Strict-Transport-Security 'max-age=3600'
               - add_header:
-                - Public-Key-Pins 'pin-sha256="gzfGUUlu7tXnxEMXYVam6okv4zKMkdklF6FWaRAuVhg="; pin-sha256="5SzpzAvKPcuCnphngHDKLm+DSF0saaDAFtpgOuTvhlQ="; max-age=315366000'
+                - Public-Key-Pins 'pin-sha256="gzfGUUlu7tXnxEMXYVam6okv4zKMkdklF6FWaRAuVhg="; pin-sha256="5SzpzAvKPcuCnphngHDKLm+DSF0saaDAFtpgOuTvhlQ="; max-age=3600'
               - location /:
                 - proxy_pass: http://roundcube
                 - proxy_set_header:
