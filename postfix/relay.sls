@@ -42,10 +42,10 @@ postfix:
     smtpd_soft_error_limit: 3
     smtpd_tls_CAfile: /etc/ssl/certs/ca-certificates.crt
     smtpd_tls_auth_only: 'yes'
-    smtpd_tls_cert_file: /etc/ssl/certs/undergrid.net-bundle.crt
+    smtpd_tls_cert_file: /etc/letsencrypt/live/smtp.undergrid.net/fullchain.pem
     smtpd_tls_dh1024_param_file: ${config_directory}/dhparams.pem
     smtpd_tls_exclude_ciphers: aNULL, eNULL, EXPORT, DES, RC4, MD5, PSK, aECDH, EDH-DSS-DES-CBC3-SHA, EDH-RSA-DES-CDC3-SHA, KRB5-DE5, CBC3-SHA
-    smtpd_tls_key_file: /etc/ssl/private/undergrid.net.key
+    smtpd_tls_key_file: /etc/letsencrypt/live/smtp.undergrid.net/privkey.pem
     smtpd_tls_mandatory_protocols: '!SSLv2, !SSLv3'
     smtpd_tls_security_level: may
     smtpd_tls_received_header: 'yes'
